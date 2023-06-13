@@ -56,7 +56,7 @@ class aboutScreen extends StatelessWidget {
                           fontWeight: FontWeight.w400,
                           fontStyle: FontStyle.normal,
                           fontSize: 36,
-                          color: Color(0xff800000),
+                          color: Color(0xff000000),
                         ),
                       ),
                     ),
@@ -83,7 +83,7 @@ class aboutScreen extends StatelessWidget {
                               style: TextStyle(
                                 fontWeight: FontWeight.w700,
                                 fontStyle: FontStyle.normal,
-                                fontSize: 10,
+                                fontSize: 15,
                                 color: Color(0xff000000),
                               ),
                             ),
@@ -92,7 +92,7 @@ class aboutScreen extends StatelessWidget {
                             padding: EdgeInsets.all(10),
                             margin: EdgeInsets.fromLTRB(0, 10, 0, 10),
                             width: MediaQuery.of(context).size.width * 0.9,
-                            height: 370,
+                            height: 280,
                             decoration: BoxDecoration(
                               color: Color(0xffffffff),
                               shape: BoxShape.rectangle,
@@ -146,7 +146,7 @@ class aboutScreen extends StatelessWidget {
                               style: TextStyle(
                                 fontWeight: FontWeight.w700,
                                 fontStyle: FontStyle.normal,
-                                fontSize: 10,
+                                fontSize: 18,
                                 color: Color(0xff000000),
                               ),
                             ),
@@ -155,7 +155,7 @@ class aboutScreen extends StatelessWidget {
                             padding: EdgeInsets.all(10),
                             margin: EdgeInsets.fromLTRB(0, 10, 0, 0),
                             width: MediaQuery.of(context).size.width * 0.9,
-                            height: 1850,
+                            height: 1550,
                             decoration: BoxDecoration(
                               color: Color(0xffffffff),
                               shape: BoxShape.rectangle,

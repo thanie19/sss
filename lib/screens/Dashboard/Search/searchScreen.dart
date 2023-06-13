@@ -10,169 +10,169 @@ class searchScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisSize: MainAxisSize.max,
-        children: [
-          Container(
-            margin: EdgeInsets.all(0),
-            padding: EdgeInsets.all(0),
-            width: MediaQuery.of(context).size.width,
-            height: 120,
-            decoration: BoxDecoration(
-              color: Color(0xff800000),
-              shape: BoxShape.rectangle,
-              borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(25.0),
-                  bottomRight: Radius.circular(25.0)),
-              border: Border.all(color: Color(0xff000000), width: 1),
-            ),
-            child: Padding(
-              padding: EdgeInsets.fromLTRB(0, 30, 0, 0),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: Image(
-                      image: AssetImage("assets/images/text.png"),
-                      height: 30,
-                      width: 180,
-                      fit: BoxFit.scaleDown,
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisSize: MainAxisSize.max,
+          children: [
+            Container(
+              margin: EdgeInsets.all(0),
+              padding: EdgeInsets.all(0),
+              width: MediaQuery.of(context).size.width,
+              height: 120,
+              decoration: BoxDecoration(
+                color: Color(0xff800000),
+                shape: BoxShape.rectangle,
+                borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(25.0),
+                    bottomRight: Radius.circular(25.0)),
+                border: Border.all(color: Color(0xff000000), width: 1),
+              ),
+              child: Padding(
+                padding: EdgeInsets.fromLTRB(0, 30, 0, 0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: Image(
+                        image: AssetImage("assets/images/text.png"),
+                        height: 30,
+                        width: 180,
+                        fit: BoxFit.scaleDown,
+                      ),
                     ),
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      Container(
-                        margin: EdgeInsets.all(0),
-                        padding: EdgeInsets.all(0),
-                        width: 50,
-                        height: 50,
-                        decoration: BoxDecoration(
-                          color: Color(0x00000000),
-                          shape: BoxShape.rectangle,
-                          borderRadius: BorderRadius.zero,
-                        ),
-                        child: IconButton(
-                          icon: const Icon(
-                            Icons.home,
-                            color: Colors.white,
-                            size: 24,
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Container(
+                          margin: EdgeInsets.all(0),
+                          padding: EdgeInsets.all(0),
+                          width: 50,
+                          height: 50,
+                          decoration: BoxDecoration(
+                            color: Color(0x00000000),
+                            shape: BoxShape.rectangle,
+                            borderRadius: BorderRadius.zero,
                           ),
-                          onPressed: () {
-                            Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => DashboardScreen(),
-                            ));
-                          },
-                        ),
-                      ),
-                      Container(
-                        margin: EdgeInsets.all(0),
-                        padding: EdgeInsets.all(0),
-                        width: 50,
-                        height: 50,
-                        decoration: BoxDecoration(
-                          color: Color(0x00000000),
-                          shape: BoxShape.rectangle,
-                          borderRadius: BorderRadius.zero,
-                        ),
-                        child: IconButton(
-                          icon: const Icon(
-                            Icons.search,
-                            color: Colors.white,
-                            size: 24,
+                          child: IconButton(
+                            icon: const Icon(
+                              Icons.home,
+                              color: Colors.white,
+                              size: 24,
+                            ),
+                            onPressed: () {
+                              Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => DashboardScreen(),
+                              ));
+                            },
                           ),
-                          onPressed: () {
-                            Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => searchScreen(),
-                            ));
-                          },
                         ),
-                      ),
-                      Container(
-                        margin: EdgeInsets.all(0),
-                        padding: EdgeInsets.all(0),
-                        width: 50,
-                        height: 50,
-                        decoration: BoxDecoration(
-                          color: Color(0x00000000),
-                          shape: BoxShape.rectangle,
-                          borderRadius: BorderRadius.zero,
-                        ),
-                        child: IconButton(
-                          icon: const Icon(
-                            Icons.add,
-                            color: Colors.white,
-                            size: 24,
+                        Container(
+                          margin: EdgeInsets.all(0),
+                          padding: EdgeInsets.all(0),
+                          width: 50,
+                          height: 50,
+                          decoration: BoxDecoration(
+                            color: Color(0x00000000),
+                            shape: BoxShape.rectangle,
+                            borderRadius: BorderRadius.zero,
                           ),
-                          onPressed: () {
-                            Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => addScreen(),
-                            ));
-                          },
-                        ),
-                      ),
-                      Container(
-                        margin: EdgeInsets.all(0),
-                        padding: EdgeInsets.all(0),
-                        width: 50,
-                        height: 50,
-                        decoration: BoxDecoration(
-                          color: Color(0x00000000),
-                          shape: BoxShape.rectangle,
-                          borderRadius: BorderRadius.zero,
-                        ),
-                        child: IconButton(
-                          icon: const Icon(
-                            Icons.notifications,
-                            color: Colors.white,
-                            size: 24,
+                          child: IconButton(
+                            icon: const Icon(
+                              Icons.search,
+                              color: Colors.white,
+                              size: 24,
+                            ),
+                            onPressed: () {
+                              Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => searchScreen(),
+                              ));
+                            },
                           ),
-                          onPressed: () {
-                            Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => notifScreen(),
-                            ));
-                          },
                         ),
-                      ),
-                      Container(
-                        margin: EdgeInsets.all(0),
-                        padding: EdgeInsets.all(0),
-                        width: 50,
-                        height: 50,
-                        decoration: BoxDecoration(
-                          color: Color(0x00000000),
-                          shape: BoxShape.rectangle,
-                          borderRadius: BorderRadius.zero,
-                        ),
-                        child: IconButton(
-                          icon: const Icon(
-                            Icons.person,
-                            color: Colors.white,
-                            size: 24,
+                        Container(
+                          margin: EdgeInsets.all(0),
+                          padding: EdgeInsets.all(0),
+                          width: 50,
+                          height: 50,
+                          decoration: BoxDecoration(
+                            color: Color(0x00000000),
+                            shape: BoxShape.rectangle,
+                            borderRadius: BorderRadius.zero,
                           ),
-                          onPressed: () {
-                            Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => profileScreen(),
-                            ));
-                          },
+                          child: IconButton(
+                            icon: const Icon(
+                              Icons.add,
+                              color: Colors.white,
+                              size: 24,
+                            ),
+                            onPressed: () {
+                              Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => addScreen(),
+                              ));
+                            },
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
-                ],
+                        Container(
+                          margin: EdgeInsets.all(0),
+                          padding: EdgeInsets.all(0),
+                          width: 50,
+                          height: 50,
+                          decoration: BoxDecoration(
+                            color: Color(0x00000000),
+                            shape: BoxShape.rectangle,
+                            borderRadius: BorderRadius.zero,
+                          ),
+                          child: IconButton(
+                            icon: const Icon(
+                              Icons.notifications,
+                              color: Colors.white,
+                              size: 24,
+                            ),
+                            onPressed: () {
+                              Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => notifScreen(),
+                              ));
+                            },
+                          ),
+                        ),
+                        Container(
+                          margin: EdgeInsets.all(0),
+                          padding: EdgeInsets.all(0),
+                          width: 50,
+                          height: 50,
+                          decoration: BoxDecoration(
+                            color: Color(0x00000000),
+                            shape: BoxShape.rectangle,
+                            borderRadius: BorderRadius.zero,
+                          ),
+                          child: IconButton(
+                            icon: const Icon(
+                              Icons.person,
+                              color: Colors.white,
+                              size: 24,
+                            ),
+                            onPressed: () {
+                              Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => profileScreen(),
+                              ));
+                            },
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ),
             ),
-          ),
-          Padding(
-            padding: EdgeInsets.symmetric(vertical: 0, horizontal: 10),
-            child: SingleChildScrollView(
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 0, horizontal: 10),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -269,7 +269,7 @@ class searchScreen extends StatelessWidget {
                                 topRight: Radius.circular(5.0),
                                 bottomRight: Radius.circular(5.0)),
                             side:
-                                BorderSide(color: Color(0xff000000), width: 1),
+                            BorderSide(color: Color(0xff000000), width: 1),
                           ),
                           padding: EdgeInsets.all(16),
                           child: Text(
@@ -316,16 +316,16 @@ class searchScreen extends StatelessWidget {
                       MaterialButton(
                         child: Container(
                           margin:
-                              EdgeInsets.symmetric(vertical: 10, horizontal: 0),
+                          EdgeInsets.symmetric(vertical: 10, horizontal: 0),
                           padding: EdgeInsets.all(0),
-                          width: MediaQuery.of(context).size.width,
+                          width: MediaQuery.of(context).size.width * 0.8,
                           height: 80,
                           decoration: BoxDecoration(
-                            color: Colors.orange.shade100,
+                            color: Colors.blue.shade100,
                             shape: BoxShape.rectangle,
                             borderRadius: BorderRadius.circular(10.0),
                             border:
-                                Border.all(color: Color(0xff000000), width: 1),
+                            Border.all(color: Color(0xff000000), width: 1),
                           ),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -367,7 +367,7 @@ class searchScreen extends StatelessWidget {
                                       style: TextStyle(
                                         fontWeight: FontWeight.w400,
                                         fontStyle: FontStyle.normal,
-                                        fontSize: 14,
+                                        fontSize: 15,
                                         color: Colors.white,
                                       ),
                                     ),
@@ -418,16 +418,16 @@ class searchScreen extends StatelessWidget {
                       MaterialButton(
                         child: Container(
                           margin:
-                              EdgeInsets.symmetric(vertical: 10, horizontal: 0),
+                          EdgeInsets.symmetric(vertical: 10, horizontal: 0),
                           padding: EdgeInsets.all(0),
-                          width: MediaQuery.of(context).size.width,
+                          width: MediaQuery.of(context).size.width * 0.8,
                           height: 80,
                           decoration: BoxDecoration(
-                            color: Colors.purple.shade100,
+                            color: Colors.green.shade100,
                             shape: BoxShape.rectangle,
                             borderRadius: BorderRadius.circular(10.0),
                             border:
-                                Border.all(color: Color(0xff000000), width: 1),
+                            Border.all(color: Color(0xff000000), width: 1),
                           ),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -469,7 +469,313 @@ class searchScreen extends StatelessWidget {
                                       style: TextStyle(
                                         fontWeight: FontWeight.w400,
                                         fontStyle: FontStyle.normal,
+                                        fontSize: 15,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Text(
+                                      "username",
+                                      textAlign: TextAlign.start,
+                                      overflow: TextOverflow.clip,
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w400,
+                                        fontStyle: FontStyle.normal,
                                         fontSize: 14,
+                                        color: Color(0xff000000),
+                                      ),
+                                    ),
+                                    Text(
+                                      "sample@email",
+                                      textAlign: TextAlign.start,
+                                      overflow: TextOverflow.clip,
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w400,
+                                        fontStyle: FontStyle.normal,
+                                        fontSize: 14,
+                                        color: Color(0xff000000),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        onPressed: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => viewScreen(),
+                          ));
+                        },
+                      ),
+                      MaterialButton(
+                        child: Container(
+                          margin:
+                          EdgeInsets.symmetric(vertical: 10, horizontal: 0),
+                          padding: EdgeInsets.all(0),
+                          width: MediaQuery.of(context).size.width * 0.8,
+                          height: 80,
+                          decoration: BoxDecoration(
+                            color: Colors.green.shade100,
+                            shape: BoxShape.rectangle,
+                            borderRadius: BorderRadius.circular(10.0),
+                            border:
+                            Border.all(color: Color(0xff000000), width: 1),
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Container(
+                                margin: EdgeInsets.all(0),
+                                padding: EdgeInsets.all(0),
+                                width: 80,
+                                height: 80,
+                                decoration: BoxDecoration(
+                                  color: Color(0xff800000),
+                                  shape: BoxShape.rectangle,
+                                  borderRadius: BorderRadius.only(
+                                      topLeft: Radius.circular(10.0),
+                                      bottomLeft: Radius.circular(10.0)),
+                                ),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Text(
+                                      "03",
+                                      textAlign: TextAlign.start,
+                                      overflow: TextOverflow.clip,
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w400,
+                                        fontStyle: FontStyle.normal,
+                                        fontSize: 30,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                    Text(
+                                      "Jan",
+                                      textAlign: TextAlign.start,
+                                      overflow: TextOverflow.clip,
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w400,
+                                        fontStyle: FontStyle.normal,
+                                        fontSize: 15,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Text(
+                                      "username",
+                                      textAlign: TextAlign.start,
+                                      overflow: TextOverflow.clip,
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w400,
+                                        fontStyle: FontStyle.normal,
+                                        fontSize: 14,
+                                        color: Color(0xff000000),
+                                      ),
+                                    ),
+                                    Text(
+                                      "sample@email",
+                                      textAlign: TextAlign.start,
+                                      overflow: TextOverflow.clip,
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w400,
+                                        fontStyle: FontStyle.normal,
+                                        fontSize: 14,
+                                        color: Color(0xff000000),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        onPressed: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => viewScreen(),
+                          ));
+                        },
+                      ),
+                      MaterialButton(
+                        child: Container(
+                          margin:
+                          EdgeInsets.symmetric(vertical: 10, horizontal: 0),
+                          padding: EdgeInsets.all(0),
+                          width: MediaQuery.of(context).size.width * 0.8,
+                          height: 80,
+                          decoration: BoxDecoration(
+                            color: Colors.green.shade100,
+                            shape: BoxShape.rectangle,
+                            borderRadius: BorderRadius.circular(10.0),
+                            border:
+                            Border.all(color: Color(0xff000000), width: 1),
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Container(
+                                margin: EdgeInsets.all(0),
+                                padding: EdgeInsets.all(0),
+                                width: 80,
+                                height: 80,
+                                decoration: BoxDecoration(
+                                  color: Color(0xff800000),
+                                  shape: BoxShape.rectangle,
+                                  borderRadius: BorderRadius.only(
+                                      topLeft: Radius.circular(10.0),
+                                      bottomLeft: Radius.circular(10.0)),
+                                ),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Text(
+                                      "04",
+                                      textAlign: TextAlign.start,
+                                      overflow: TextOverflow.clip,
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w400,
+                                        fontStyle: FontStyle.normal,
+                                        fontSize: 30,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                    Text(
+                                      "Jan",
+                                      textAlign: TextAlign.start,
+                                      overflow: TextOverflow.clip,
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w400,
+                                        fontStyle: FontStyle.normal,
+                                        fontSize: 15,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Text(
+                                      "username",
+                                      textAlign: TextAlign.start,
+                                      overflow: TextOverflow.clip,
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w400,
+                                        fontStyle: FontStyle.normal,
+                                        fontSize: 14,
+                                        color: Color(0xff000000),
+                                      ),
+                                    ),
+                                    Text(
+                                      "sample@email",
+                                      textAlign: TextAlign.start,
+                                      overflow: TextOverflow.clip,
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w400,
+                                        fontStyle: FontStyle.normal,
+                                        fontSize: 14,
+                                        color: Color(0xff000000),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        onPressed: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => viewScreen(),
+                          ));
+                        },
+                      ),
+                      MaterialButton(
+                        child: Container(
+                          margin:
+                          EdgeInsets.symmetric(vertical: 10, horizontal: 0),
+                          padding: EdgeInsets.all(0),
+                          width: MediaQuery.of(context).size.width * 0.8,
+                          height: 80,
+                          decoration: BoxDecoration(
+                            color: Colors.green.shade100,
+                            shape: BoxShape.rectangle,
+                            borderRadius: BorderRadius.circular(10.0),
+                            border:
+                            Border.all(color: Color(0xff000000), width: 1),
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Container(
+                                margin: EdgeInsets.all(0),
+                                padding: EdgeInsets.all(0),
+                                width: 80,
+                                height: 80,
+                                decoration: BoxDecoration(
+                                  color: Color(0xff800000),
+                                  shape: BoxShape.rectangle,
+                                  borderRadius: BorderRadius.only(
+                                      topLeft: Radius.circular(10.0),
+                                      bottomLeft: Radius.circular(10.0)),
+                                ),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Text(
+                                      "05",
+                                      textAlign: TextAlign.start,
+                                      overflow: TextOverflow.clip,
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w400,
+                                        fontStyle: FontStyle.normal,
+                                        fontSize: 30,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                    Text(
+                                      "Jan",
+                                      textAlign: TextAlign.start,
+                                      overflow: TextOverflow.clip,
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w400,
+                                        fontStyle: FontStyle.normal,
+                                        fontSize: 15,
                                         color: Colors.white,
                                       ),
                                     ),
@@ -522,8 +828,8 @@ class searchScreen extends StatelessWidget {
                 ],
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

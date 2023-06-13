@@ -85,35 +85,40 @@ class _TermsAndConditionsPageState extends State<TermsAndConditionsPage> {
               ],
             ),
             SizedBox(height: 16),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                primary: Color(0xff800000), // Change the button color here
+            Container(
+              height: 50,
+              width: MediaQuery.of(context).size.width,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  primary: Color(0xff800000),
+                  textStyle: TextStyle(fontSize: 18),
+                ),
+                onPressed: () {
+                  if (_isChecked) {
+                    navigateToDashboard();
+                  } else {
+                    showDialog(
+                      context: context,
+                      builder: (BuildContext context) {
+                        return AlertDialog(
+                          title: Text("Agreement Required"),
+                          content: Text(
+                              "Please agree to the terms and conditions before proceeding."),
+                          actions: [
+                            TextButton(
+                              onPressed: () {
+                                Navigator.pop(context);
+                              },
+                              child: Text("OK"),
+                            ),
+                          ],
+                        );
+                      },
+                    );
+                  }
+                },
+                child: Text("Continue"),
               ),
-              onPressed: () {
-                if (_isChecked) {
-                  navigateToDashboard();
-                } else {
-                  showDialog(
-                    context: context,
-                    builder: (BuildContext context) {
-                      return AlertDialog(
-                        title: Text("Agreement Required"),
-                        content: Text(
-                            "Please agree to the terms and conditions before proceeding."),
-                        actions: [
-                          TextButton(
-                            onPressed: () {
-                              Navigator.pop(context);
-                            },
-                            child: Text("OK"),
-                          ),
-                        ],
-                      );
-                    },
-                  );
-                }
-              },
-              child: Text("Continue"),
             ),
           ],
         ),

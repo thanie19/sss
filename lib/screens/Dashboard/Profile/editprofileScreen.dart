@@ -50,7 +50,7 @@ class editprofileScreen extends StatelessWidget {
                     style: TextStyle(
                       fontWeight: FontWeight.w500,
                       fontStyle: FontStyle.normal,
-                      fontSize: 14,
+                      fontSize: 20,
                       color: Color(0xff000000),
                     ),
                   ),
@@ -83,7 +83,7 @@ class editprofileScreen extends StatelessWidget {
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                         ),
-                        child: Image.asset("assets/images/5856.jpg",
+                        child: Image.asset("assets/images/person.png",
                             fit: BoxFit.cover),
                       ),
                     ),
@@ -120,7 +120,7 @@ class editprofileScreen extends StatelessWidget {
                             style: TextStyle(
                               fontWeight: FontWeight.w400,
                               fontStyle: FontStyle.normal,
-                              fontSize: 15,
+                              fontSize: 18,
                               color: Color(0xff000000),
                             ),
                           ),
@@ -131,7 +131,7 @@ class editprofileScreen extends StatelessWidget {
                       margin: EdgeInsets.symmetric(vertical: 10, horizontal: 0),
                       padding: EdgeInsets.all(0),
                       width: MediaQuery.of(context).size.width,
-                      height: 170,
+                      height: 300,
                       decoration: BoxDecoration(
                         color: Color(0x00000000),
                         shape: BoxShape.rectangle,
@@ -143,9 +143,9 @@ class editprofileScreen extends StatelessWidget {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Container(
-                            margin: EdgeInsets.all(0),
+                            margin: EdgeInsets.all(5),
                             padding: EdgeInsets.all(0),
-                            height: 40,
+                            height: 50,
                             decoration: BoxDecoration(
                               color: Color(0x00000000),
                               shape: BoxShape.rectangle,
@@ -159,7 +159,7 @@ class editprofileScreen extends StatelessWidget {
                               style: TextStyle(
                                 fontWeight: FontWeight.w400,
                                 fontStyle: FontStyle.normal,
-                                fontSize: 14,
+                                fontSize: 18,
                                 color: Color(0xff000000),
                               ),
                               decoration: InputDecoration(
@@ -183,7 +183,7 @@ class editprofileScreen extends StatelessWidget {
                                 hintStyle: TextStyle(
                                   fontWeight: FontWeight.w400,
                                   fontStyle: FontStyle.normal,
-                                  fontSize: 14,
+                                  fontSize: 18,
                                   color: Color(0xff000000),
                                 ),
                                 filled: true,
@@ -195,9 +195,9 @@ class editprofileScreen extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.all(0),
+                            margin: EdgeInsets.all(5),
                             padding: EdgeInsets.all(0),
-                            height: 40,
+                            height: 50,
                             decoration: BoxDecoration(
                               color: Color(0x00000000),
                               shape: BoxShape.rectangle,
@@ -211,7 +211,7 @@ class editprofileScreen extends StatelessWidget {
                               style: TextStyle(
                                 fontWeight: FontWeight.w400,
                                 fontStyle: FontStyle.normal,
-                                fontSize: 14,
+                                fontSize: 18,
                                 color: Color(0xff000000),
                               ),
                               decoration: InputDecoration(
@@ -235,7 +235,7 @@ class editprofileScreen extends StatelessWidget {
                                 hintStyle: TextStyle(
                                   fontWeight: FontWeight.w400,
                                   fontStyle: FontStyle.normal,
-                                  fontSize: 14,
+                                  fontSize: 18,
                                   color: Color(0xff000000),
                                 ),
                                 filled: true,
@@ -247,9 +247,9 @@ class editprofileScreen extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.all(0),
+                            margin: EdgeInsets.all(5),
                             padding: EdgeInsets.all(0),
-                            height: 40,
+                            height: 50,
                             decoration: BoxDecoration(
                               color: Color(0x00000000),
                               shape: BoxShape.rectangle,
@@ -263,7 +263,7 @@ class editprofileScreen extends StatelessWidget {
                               style: TextStyle(
                                 fontWeight: FontWeight.w400,
                                 fontStyle: FontStyle.normal,
-                                fontSize: 14,
+                                fontSize: 18,
                                 color: Color(0xff000000),
                               ),
                               decoration: InputDecoration(
@@ -287,7 +287,7 @@ class editprofileScreen extends StatelessWidget {
                                 hintStyle: TextStyle(
                                   fontWeight: FontWeight.w400,
                                   fontStyle: FontStyle.normal,
-                                  fontSize: 14,
+                                  fontSize: 18,
                                   color: Color(0xff000000),
                                 ),
                                 filled: true,
@@ -299,9 +299,9 @@ class editprofileScreen extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.all(0),
+                            margin: EdgeInsets.all(5),
                             padding: EdgeInsets.all(0),
-                            height: 40,
+                            height: 50,
                             decoration: BoxDecoration(
                               color: Color(0x00000000),
                               shape: BoxShape.rectangle,
@@ -315,7 +315,7 @@ class editprofileScreen extends StatelessWidget {
                               style: TextStyle(
                                 fontWeight: FontWeight.w400,
                                 fontStyle: FontStyle.normal,
-                                fontSize: 14,
+                                fontSize: 18,
                                 color: Color(0xff000000),
                               ),
                               decoration: InputDecoration(
@@ -339,7 +339,7 @@ class editprofileScreen extends StatelessWidget {
                                 hintStyle: TextStyle(
                                   fontWeight: FontWeight.w400,
                                   fontStyle: FontStyle.normal,
-                                  fontSize: 14,
+                                  fontSize: 18,
                                   color: Color(0xff000000),
                                 ),
                                 filled: true,
@@ -355,7 +355,7 @@ class editprofileScreen extends StatelessWidget {
                     ),
                     MaterialButton(
                       onPressed: () {},
-                      color: Color(0xffffffff),
+                      color: Color(0xff800000),
                       elevation: 0,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(5.0),
@@ -365,12 +365,12 @@ class editprofileScreen extends StatelessWidget {
                       child: Text(
                         "Save",
                         style: TextStyle(
-                          fontSize: 12,
+                          fontSize: 18,
                           fontWeight: FontWeight.w700,
                           fontStyle: FontStyle.normal,
                         ),
                       ),
-                      textColor: Color(0xff000000),
+                      textColor: Color(0xffffffff),
                       height: 50,
                       minWidth: MediaQuery.of(context).size.width,
                     ),

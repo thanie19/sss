@@ -45,7 +45,7 @@ class _addScreenState extends State<addScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Padding(
-        padding: EdgeInsets.symmetric(vertical: 0, horizontal: 10),
+        padding: EdgeInsets.all(10),
         child: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -56,7 +56,7 @@ class _addScreenState extends State<addScreen> {
                 margin: EdgeInsets.fromLTRB(0, 50, 0, 0),
                 padding: EdgeInsets.zero,
                 width: MediaQuery.of(context).size.width,
-                height: 60,
+                height: 70,
                 decoration: BoxDecoration(
                   color: Color(0x00000000),
                   shape: BoxShape.rectangle,
@@ -89,7 +89,7 @@ class _addScreenState extends State<addScreen> {
                       style: TextStyle(
                         fontWeight: FontWeight.w700,
                         fontStyle: FontStyle.normal,
-                        fontSize: 10,
+                        fontSize: 15,
                         color: Colors.black,
                       ),
                     ),
@@ -121,23 +121,25 @@ class _addScreenState extends State<addScreen> {
                 ),
               ),
               Container(
-                margin: EdgeInsets.all(0),
+                margin: EdgeInsets.all(10),
                 padding: EdgeInsets.zero,
-                width: 250,
+                width: 350,
                 height: 250,
                 decoration: BoxDecoration(
                   color: Colors.blueGrey.shade100,
                   shape: BoxShape.rectangle,
                   borderRadius: BorderRadius.circular(15),
                 ),
-                child: CupertinoDatePicker(
-                  initialDateTime: DateTime.now(),
-                  mode: CupertinoDatePickerMode.date,
-                  onDateTimeChanged: (DateTime dateTime) {
-                    setState(() {
-                      selectedDate = dateTime;
-                    });
-                  },
+                child: Center(
+                  child: CupertinoDatePicker(
+                    initialDateTime: DateTime.now(),
+                    mode: CupertinoDatePickerMode.date,
+                    onDateTimeChanged: (DateTime dateTime) {
+                      setState(() {
+                        selectedDate = dateTime;
+                      });
+                    },
+                  ),
                 ),
               ),
               Padding(
@@ -158,23 +160,25 @@ class _addScreenState extends State<addScreen> {
                 ),
               ),
               Container(
-                margin: EdgeInsets.all(0),
+                margin: EdgeInsets.all(10),
                 padding: EdgeInsets.zero,
-                width: 250,
+                width: 350,
                 height: 150,
                 decoration: BoxDecoration(
                   color: Colors.teal.shade100,
                   shape: BoxShape.rectangle,
                   borderRadius: BorderRadius.circular(15),
                 ),
-                child: CupertinoPicker(
-                  itemExtent: 32.0,
-                  onSelectedItemChanged: (int index) {
-                    setState(() {
-                      selectedTime = getTimeFromIndex(index);
-                    });
-                  },
-                  children: getPickerTimeItems(),
+                child: Center(
+                  child: CupertinoPicker(
+                    itemExtent: 32.0,
+                    onSelectedItemChanged: (int index) {
+                      setState(() {
+                        selectedTime = getTimeFromIndex(index);
+                      });
+                    },
+                    children: getPickerTimeItems(),
+                  ),
                 ),
               ),
               Padding(
@@ -195,9 +199,9 @@ class _addScreenState extends State<addScreen> {
                 ),
               ),
               Container(
-                margin: EdgeInsets.all(0),
+                margin: EdgeInsets.all(10),
                 padding: EdgeInsets.zero,
-                width: 250,
+                width: 350,
                 height: 50,
                 decoration: BoxDecoration(
                   color: Color(0xffffffff),
@@ -230,9 +234,9 @@ class _addScreenState extends State<addScreen> {
                 ),
               ),
               Container(
-                margin: EdgeInsets.all(0),
+                margin: EdgeInsets.all(10),
                 padding: EdgeInsets.zero,
-                width: 250,
+                width: 350,
                 height: 100,
                 decoration: BoxDecoration(
                   color: Color(0xffffffff),
@@ -247,10 +251,19 @@ class _addScreenState extends State<addScreen> {
                   },
                 ),
               ),
-              ElevatedButton(
-                onPressed: () => submitAppointment(context),
-                child: Text('Submit'),
+              Container(
+                height: 50,
+                width: MediaQuery.of(context).size.width,
+                child: ElevatedButton(
+                  onPressed: () => submitAppointment(context),
+                  child: Text('Submit'),
+                  style: ElevatedButton.styleFrom(
+                    primary: Color(0xff800000),
+                    textStyle: TextStyle(fontSize: 18),
+                  ),
+                  ),
               ),
+              SizedBox(height: 16),
             ],
           ),
         ),

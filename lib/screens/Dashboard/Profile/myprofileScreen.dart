@@ -15,8 +15,8 @@ class myprofileScreen extends StatelessWidget {
         children: [
           Container(
             alignment: Alignment.center,
-            margin: EdgeInsets.all(0),
-            padding: EdgeInsets.all(0),
+            margin: EdgeInsets.fromLTRB(0, 10, 0, 0),
+            padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
             width: MediaQuery.of(context).size.width,
             height: 100,
             decoration: BoxDecoration(
@@ -50,7 +50,7 @@ class myprofileScreen extends StatelessWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.w500,
                     fontStyle: FontStyle.normal,
-                    fontSize: 14,
+                    fontSize: 20,
                     color: Color(0xff000000),
                   ),
                 ),
@@ -120,7 +120,7 @@ class myprofileScreen extends StatelessWidget {
                           style: TextStyle(
                             fontWeight: FontWeight.w400,
                             fontStyle: FontStyle.normal,
-                            fontSize: 15,
+                            fontSize: 18,
                             color: Color(0xff000000),
                           ),
                         ),
@@ -143,7 +143,7 @@ class myprofileScreen extends StatelessWidget {
                     child: Text(
                       "EDIT PROFILE",
                       style: TextStyle(
-                        fontSize: 10,
+                        fontSize: 18,
                         fontWeight: FontWeight.w700,
                         fontStyle: FontStyle.normal,
                       ),
@@ -184,7 +184,7 @@ class myprofileScreen extends StatelessWidget {
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsets.fromLTRB(0, 0, 10, 0),
+                                padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                                 child: Text(
                                   "Name:",
                                   textAlign: TextAlign.start,
@@ -192,7 +192,7 @@ class myprofileScreen extends StatelessWidget {
                                   style: TextStyle(
                                     fontWeight: FontWeight.w400,
                                     fontStyle: FontStyle.normal,
-                                    fontSize: 14,
+                                    fontSize: 18,
                                     color: Color(0xff000000),
                                   ),
                                 ),
@@ -204,7 +204,7 @@ class myprofileScreen extends StatelessWidget {
                                 style: TextStyle(
                                   fontWeight: FontWeight.w400,
                                   fontStyle: FontStyle.normal,
-                                  fontSize: 14,
+                                  fontSize: 18,
                                   color: Color(0xff000000),
                                 ),
                               ),
@@ -228,7 +228,7 @@ class myprofileScreen extends StatelessWidget {
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsets.fromLTRB(0, 0, 10, 0),
+                                padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                                 child: Text(
                                   "Email:",
                                   textAlign: TextAlign.start,
@@ -236,7 +236,7 @@ class myprofileScreen extends StatelessWidget {
                                   style: TextStyle(
                                     fontWeight: FontWeight.w400,
                                     fontStyle: FontStyle.normal,
-                                    fontSize: 14,
+                                    fontSize: 18,
                                     color: Color(0xff000000),
                                   ),
                                 ),
@@ -248,7 +248,7 @@ class myprofileScreen extends StatelessWidget {
                                 style: TextStyle(
                                   fontWeight: FontWeight.w400,
                                   fontStyle: FontStyle.normal,
-                                  fontSize: 14,
+                                  fontSize: 18,
                                   color: Color(0xff000000),
                                 ),
                               ),
@@ -272,7 +272,7 @@ class myprofileScreen extends StatelessWidget {
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsets.fromLTRB(0, 0, 10, 0),
+                                padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                                 child: Text(
                                   "Password:",
                                   textAlign: TextAlign.start,
@@ -280,7 +280,7 @@ class myprofileScreen extends StatelessWidget {
                                   style: TextStyle(
                                     fontWeight: FontWeight.w400,
                                     fontStyle: FontStyle.normal,
-                                    fontSize: 14,
+                                    fontSize: 18,
                                     color: Color(0xff000000),
                                   ),
                                 ),
@@ -292,7 +292,7 @@ class myprofileScreen extends StatelessWidget {
                                 style: TextStyle(
                                   fontWeight: FontWeight.w400,
                                   fontStyle: FontStyle.normal,
-                                  fontSize: 14,
+                                  fontSize: 18,
                                   color: Color(0xff000000),
                                 ),
                               ),
@@ -316,7 +316,7 @@ class myprofileScreen extends StatelessWidget {
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsets.fromLTRB(0, 0, 10, 0),
+                                padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                                 child: Text(
                                   "Contact Number:",
                                   textAlign: TextAlign.start,
@@ -324,7 +324,7 @@ class myprofileScreen extends StatelessWidget {
                                   style: TextStyle(
                                     fontWeight: FontWeight.w400,
                                     fontStyle: FontStyle.normal,
-                                    fontSize: 14,
+                                    fontSize: 18,
                                     color: Color(0xff000000),
                                   ),
                                 ),
@@ -336,7 +336,7 @@ class myprofileScreen extends StatelessWidget {
                                 style: TextStyle(
                                   fontWeight: FontWeight.w400,
                                   fontStyle: FontStyle.normal,
-                                  fontSize: 14,
+                                  fontSize: 18,
                                   color: Color(0xff000000),
                                 ),
                               ),

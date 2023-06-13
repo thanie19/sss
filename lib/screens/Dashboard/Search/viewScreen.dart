@@ -45,7 +45,7 @@ class viewScreen extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "YOUR APPOINTMENT",
+                  "MY APPOINTMENT",
                   textAlign: TextAlign.start,
                   overflow: TextOverflow.clip,
                   style: TextStyle(
@@ -66,7 +66,7 @@ class viewScreen extends StatelessWidget {
             endIndent: 0,
           ),
           Padding(
-            padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
+            padding: EdgeInsets.fromLTRB(10, 40, 10, 0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -116,10 +116,10 @@ class viewScreen extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.fromLTRB(4, 0, 0, 0),
                   padding: EdgeInsets.all(0),
-                  width: 165,
+                  width: 200,
                   height: 100,
                   decoration: BoxDecoration(
-                    color: Colors.green.shade100,
+                    color: Colors.blue.shade100,
                     shape: BoxShape.rectangle,
                     borderRadius: BorderRadius.circular(10.0),
                     border: Border.all(color: Color(0xff000000), width: 1),
@@ -163,8 +163,8 @@ class viewScreen extends StatelessWidget {
           Container(
             margin: EdgeInsets.fromLTRB(10, 10, 10, 0),
             padding: EdgeInsets.all(0),
-            width: 265,
-            height: 200,
+            width: 300,
+            height: 300,
             decoration: BoxDecoration(
               color: Colors.blue.shade100,
               shape: BoxShape.rectangle,

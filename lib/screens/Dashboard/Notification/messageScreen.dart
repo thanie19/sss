@@ -6,7 +6,7 @@ class messageScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.indigo.shade100,
+      backgroundColor: Colors.white,
       body: Padding(
         padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
         child: SingleChildScrollView(
@@ -154,7 +154,7 @@ class messageScreen extends StatelessWidget {
                                 width: MediaQuery.of(context).size.width *
                                     0.7000000000000001,
                                 decoration: BoxDecoration(
-                                  color: Color(0xffffffff),
+                                  color: Colors.blueGrey.shade100,
                                   shape: BoxShape.rectangle,
                                   borderRadius: BorderRadius.only(
                                       topRight: Radius.circular(10.0),

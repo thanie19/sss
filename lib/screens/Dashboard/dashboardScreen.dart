@@ -231,7 +231,7 @@ class DashboardScreen extends StatelessWidget {
                               width: MediaQuery.of(context).size.width * 0.8,
                               height: 200,
                               decoration: BoxDecoration(
-                                color: Colors.blueGrey.shade100,
+                                color: Colors.blue.shade100,
                                 shape: BoxShape.rectangle,
                                 borderRadius: BorderRadius.circular(10.0),
                                 border: Border.all(
@@ -246,9 +246,9 @@ class DashboardScreen extends StatelessWidget {
                                     margin: EdgeInsets.all(0),
                                     padding: EdgeInsets.all(0),
                                     width: MediaQuery.of(context).size.width,
-                                    height: 127,
+                                    height: 128,
                                     decoration: BoxDecoration(
-                                      color: Color(0xff80000),
+                                      color: Color(0xff800000),
                                       shape: BoxShape.rectangle,
                                       borderRadius: BorderRadius.circular(10.0),
                                     ),
@@ -267,7 +267,7 @@ class DashboardScreen extends StatelessWidget {
                                             fontWeight: FontWeight.w400,
                                             fontStyle: FontStyle.normal,
                                             fontSize: 50,
-                                            color: Color(0xff000000),
+                                            color: Color(0xffffffff),
                                           ),
                                         ),
                                         Text(
@@ -278,7 +278,7 @@ class DashboardScreen extends StatelessWidget {
                                             fontWeight: FontWeight.w400,
                                             fontStyle: FontStyle.normal,
                                             fontSize: 20,
-                                            color: Color(0xff000000),
+                                            color: Color(0xffffffff),
                                           ),
                                         ),
                                       ],
@@ -544,6 +544,210 @@ class DashboardScreen extends StatelessWidget {
                                 children: [
                                   Text(
                                     "02",
+                                    textAlign: TextAlign.start,
+                                    overflow: TextOverflow.clip,
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.w400,
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 30,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  Text(
+                                    "Jan",
+                                    textAlign: TextAlign.start,
+                                    overflow: TextOverflow.clip,
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.w400,
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 15,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Text(
+                                    "username",
+                                    textAlign: TextAlign.start,
+                                    overflow: TextOverflow.clip,
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.w400,
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 14,
+                                      color: Color(0xff000000),
+                                    ),
+                                  ),
+                                  Text(
+                                    "sample@email",
+                                    textAlign: TextAlign.start,
+                                    overflow: TextOverflow.clip,
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.w400,
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 14,
+                                      color: Color(0xff000000),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => viewScreen(),
+                        ));
+                      },
+                    ),
+                    MaterialButton(
+                      child: Container(
+                        margin:
+                        EdgeInsets.symmetric(vertical: 10, horizontal: 0),
+                        padding: EdgeInsets.all(0),
+                        width: MediaQuery.of(context).size.width * 0.8,
+                        height: 80,
+                        decoration: BoxDecoration(
+                          color: Colors.green.shade100,
+                          shape: BoxShape.rectangle,
+                          borderRadius: BorderRadius.circular(10.0),
+                          border:
+                          Border.all(color: Color(0xff000000), width: 1),
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Container(
+                              margin: EdgeInsets.all(0),
+                              padding: EdgeInsets.all(0),
+                              width: 80,
+                              height: 80,
+                              decoration: BoxDecoration(
+                                color: Color(0xff800000),
+                                shape: BoxShape.rectangle,
+                                borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(10.0),
+                                    bottomLeft: Radius.circular(10.0)),
+                              ),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Text(
+                                    "03",
+                                    textAlign: TextAlign.start,
+                                    overflow: TextOverflow.clip,
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.w400,
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 30,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  Text(
+                                    "Jan",
+                                    textAlign: TextAlign.start,
+                                    overflow: TextOverflow.clip,
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.w400,
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 15,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Text(
+                                    "username",
+                                    textAlign: TextAlign.start,
+                                    overflow: TextOverflow.clip,
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.w400,
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 14,
+                                      color: Color(0xff000000),
+                                    ),
+                                  ),
+                                  Text(
+                                    "sample@email",
+                                    textAlign: TextAlign.start,
+                                    overflow: TextOverflow.clip,
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.w400,
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 14,
+                                      color: Color(0xff000000),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => viewScreen(),
+                        ));
+                      },
+                    ),
+                    MaterialButton(
+                      child: Container(
+                        margin:
+                        EdgeInsets.symmetric(vertical: 10, horizontal: 0),
+                        padding: EdgeInsets.all(0),
+                        width: MediaQuery.of(context).size.width * 0.8,
+                        height: 80,
+                        decoration: BoxDecoration(
+                          color: Colors.green.shade100,
+                          shape: BoxShape.rectangle,
+                          borderRadius: BorderRadius.circular(10.0),
+                          border:
+                          Border.all(color: Color(0xff000000), width: 1),
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Container(
+                              margin: EdgeInsets.all(0),
+                              padding: EdgeInsets.all(0),
+                              width: 80,
+                              height: 80,
+                              decoration: BoxDecoration(
+                                color: Color(0xff800000),
+                                shape: BoxShape.rectangle,
+                                borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(10.0),
+                                    bottomLeft: Radius.circular(10.0)),
+                              ),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Text(
+                                    "04",
                                     textAlign: TextAlign.start,
                                     overflow: TextOverflow.clip,
                                     style: TextStyle(
