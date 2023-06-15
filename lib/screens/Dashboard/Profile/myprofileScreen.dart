@@ -143,7 +143,7 @@ class myprofileScreen extends StatelessWidget {
                     child: Text(
                       "EDIT PROFILE",
                       style: TextStyle(
-                        fontSize: 18,
+                        fontSize: 15,
                         fontWeight: FontWeight.w700,
                         fontStyle: FontStyle.normal,
                       ),

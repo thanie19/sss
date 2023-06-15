@@ -122,7 +122,6 @@ class _addScreenState extends State<addScreen> {
               ),
               Container(
                 margin: EdgeInsets.all(10),
-                padding: EdgeInsets.zero,
                 width: 350,
                 height: 250,
                 decoration: BoxDecoration(
@@ -251,17 +250,34 @@ class _addScreenState extends State<addScreen> {
                   },
                 ),
               ),
-              Container(
-                height: 50,
-                width: MediaQuery.of(context).size.width,
-                child: ElevatedButton(
-                  onPressed: () => submitAppointment(context),
-                  child: Text('Submit'),
-                  style: ElevatedButton.styleFrom(
-                    primary: Color(0xff800000),
-                    textStyle: TextStyle(fontSize: 18),
+              ElevatedButton(
+                onPressed: () => submitAppointment(context),
+                child: Container(
+                  height: 50,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10.0),
+                    gradient: LinearGradient(
+                      colors: [Colors.red, Color(0xff800000)],
+                      begin: Alignment.centerLeft,
+                      end: Alignment.centerRight,
+                    ),
                   ),
+                  child: Center(
+                    child: Text(
+                      'ADD APPOINTMENT',
+                      style: TextStyle(
+                        fontSize: 15.0,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ),
+                ),
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.transparent,
+                  onPrimary: Colors.white,
+                  elevation: 0,
+                  shadowColor: Colors.transparent,
+                ),
               ),
               SizedBox(height: 16),
             ],

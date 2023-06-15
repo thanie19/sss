@@ -148,22 +148,27 @@ class LoginPage extends StatelessWidget {
                                       ),
                                     );
                                   },
-                                  color: Color(0xff800000),
-                                  elevation: 0,
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(5.0),
-                                  ),
-                                  padding: EdgeInsets.all(16),
-                                  child: Text(
-                                    "Login",
-                                    style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w600,
-                                      fontStyle: FontStyle.normal,
+                                  child: Container(
+                                    height: 50,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10.0),
+                                      gradient: LinearGradient(
+                                        colors: [Colors.red, Color(0xff800000)],
+                                        begin: Alignment.centerLeft,
+                                        end: Alignment.centerRight,
+                                      ),
+                                    ),
+                                    child: Center(
+                                      child: Text(
+                                        'Login',
+                                        style: TextStyle(
+                                          fontSize: 18.0,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
                                     ),
                                   ),
                                   textColor: Color(0xffffffff),
-                                  height: 50,
                                   minWidth: MediaQuery.of(context).size.width,
                                 ),
                               ],

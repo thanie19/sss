@@ -159,7 +159,7 @@ class editprofileScreen extends StatelessWidget {
                               style: TextStyle(
                                 fontWeight: FontWeight.w400,
                                 fontStyle: FontStyle.normal,
-                                fontSize: 18,
+                                fontSize: 15,
                                 color: Color(0xff000000),
                               ),
                               decoration: InputDecoration(
@@ -183,7 +183,7 @@ class editprofileScreen extends StatelessWidget {
                                 hintStyle: TextStyle(
                                   fontWeight: FontWeight.w400,
                                   fontStyle: FontStyle.normal,
-                                  fontSize: 18,
+                                  fontSize: 15,
                                   color: Color(0xff000000),
                                 ),
                                 filled: true,
@@ -211,7 +211,7 @@ class editprofileScreen extends StatelessWidget {
                               style: TextStyle(
                                 fontWeight: FontWeight.w400,
                                 fontStyle: FontStyle.normal,
-                                fontSize: 18,
+                                fontSize: 15,
                                 color: Color(0xff000000),
                               ),
                               decoration: InputDecoration(
@@ -235,7 +235,7 @@ class editprofileScreen extends StatelessWidget {
                                 hintStyle: TextStyle(
                                   fontWeight: FontWeight.w400,
                                   fontStyle: FontStyle.normal,
-                                  fontSize: 18,
+                                  fontSize: 15,
                                   color: Color(0xff000000),
                                 ),
                                 filled: true,
@@ -263,7 +263,7 @@ class editprofileScreen extends StatelessWidget {
                               style: TextStyle(
                                 fontWeight: FontWeight.w400,
                                 fontStyle: FontStyle.normal,
-                                fontSize: 18,
+                                fontSize: 15,
                                 color: Color(0xff000000),
                               ),
                               decoration: InputDecoration(
@@ -287,7 +287,7 @@ class editprofileScreen extends StatelessWidget {
                                 hintStyle: TextStyle(
                                   fontWeight: FontWeight.w400,
                                   fontStyle: FontStyle.normal,
-                                  fontSize: 18,
+                                  fontSize: 15,
                                   color: Color(0xff000000),
                                 ),
                                 filled: true,
@@ -315,7 +315,7 @@ class editprofileScreen extends StatelessWidget {
                               style: TextStyle(
                                 fontWeight: FontWeight.w400,
                                 fontStyle: FontStyle.normal,
-                                fontSize: 18,
+                                fontSize: 15,
                                 color: Color(0xff000000),
                               ),
                               decoration: InputDecoration(
@@ -339,7 +339,7 @@ class editprofileScreen extends StatelessWidget {
                                 hintStyle: TextStyle(
                                   fontWeight: FontWeight.w400,
                                   fontStyle: FontStyle.normal,
-                                  fontSize: 18,
+                                  fontSize: 15,
                                   color: Color(0xff000000),
                                 ),
                                 filled: true,

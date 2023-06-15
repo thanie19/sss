@@ -78,7 +78,7 @@ class viewScreen extends StatelessWidget {
                   width: 100,
                   height: 100,
                   decoration: BoxDecoration(
-                    color: Colors.red.shade100,
+                    color: Color(0xff800000),
                     shape: BoxShape.rectangle,
                     borderRadius: BorderRadius.circular(10.0),
                     border: Border.all(color: Color(0xff000000), width: 1),
@@ -96,7 +96,7 @@ class viewScreen extends StatelessWidget {
                           fontWeight: FontWeight.w400,
                           fontStyle: FontStyle.normal,
                           fontSize: 30,
-                          color: Color(0xff000000),
+                          color: Color(0xffffffff),
                         ),
                       ),
                       Text(
@@ -107,7 +107,7 @@ class viewScreen extends StatelessWidget {
                           fontWeight: FontWeight.w400,
                           fontStyle: FontStyle.normal,
                           fontSize: 14,
-                          color: Color(0xff000000),
+                          color: Color(0xffffffff),
                         ),
                       ),
                     ],
@@ -166,7 +166,7 @@ class viewScreen extends StatelessWidget {
             width: 300,
             height: 300,
             decoration: BoxDecoration(
-              color: Colors.blue.shade100,
+              color: Colors.white,
               shape: BoxShape.rectangle,
               borderRadius: BorderRadius.circular(10.0),
               border: Border.all(color: Color(0xff000000), width: 1),

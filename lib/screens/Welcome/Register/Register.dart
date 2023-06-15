@@ -229,6 +229,7 @@ class _RegistrationFormState extends State<RegistrationForm> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xffffffff),
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.fromLTRB(10, 50, 10, 30),
@@ -278,12 +279,22 @@ class _RegistrationFormState extends State<RegistrationForm> {
                         controller: _fullnameController,
                         validator: _validateFullname,
                         decoration: InputDecoration(
-                          labelText: 'Fullname',
-                          filled: true,
-                          fillColor: Colors.white,
+                          prefixIcon: Icon(Icons.drive_file_rename_outline_rounded),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10.0),
                           ),
+                          hintText: "Fullname",
+                          hintStyle: TextStyle(
+                            fontWeight: FontWeight.w400,
+                            fontStyle: FontStyle.normal,
+                            fontSize: 14,
+                            color: Color(0xff000000),
+                          ),
+                          filled: true,
+                          fillColor: Color(0xffffffff),
+                          isDense: false,
+                          contentPadding: EdgeInsets.symmetric(
+                              vertical: 8, horizontal: 12),
                         ),
                       ),
                       SizedBox(height: 16.0),
@@ -291,12 +302,22 @@ class _RegistrationFormState extends State<RegistrationForm> {
                         controller: _usernameController,
                         validator: _validateUsername,
                         decoration: InputDecoration(
-                          labelText: 'Username',
-                          filled: true,
-                          fillColor: Colors.white,
+                          prefixIcon: Icon(Icons.drive_file_rename_outline_rounded),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10.0),
                           ),
+                          hintText: "Username",
+                          hintStyle: TextStyle(
+                            fontWeight: FontWeight.w400,
+                            fontStyle: FontStyle.normal,
+                            fontSize: 14,
+                            color: Color(0xff000000),
+                          ),
+                          filled: true,
+                          fillColor: Color(0xffffffff),
+                          isDense: false,
+                          contentPadding: EdgeInsets.symmetric(
+                              vertical: 8, horizontal: 12),
                         ),
                       ),
                       SizedBox(height: 16.0),
@@ -305,12 +326,46 @@ class _RegistrationFormState extends State<RegistrationForm> {
                         validator: _validatePassword,
                         obscureText: true,
                         decoration: InputDecoration(
-                          labelText: 'Password',
-                          filled: true,
-                          fillColor: Colors.white,
+                          prefixIcon: Icon(Icons.mail),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10.0),
                           ),
+                          hintText: "Email",
+                          hintStyle: TextStyle(
+                            fontWeight: FontWeight.w400,
+                            fontStyle: FontStyle.normal,
+                            fontSize: 14,
+                            color: Color(0xff000000),
+                          ),
+                          filled: true,
+                          fillColor: Color(0xffffffff),
+                          isDense: false,
+                          contentPadding: EdgeInsets.symmetric(
+                              vertical: 8, horizontal: 12),
+                        ),
+                      ),
+                      SizedBox(height: 16.0),
+                      TextFormField(
+                        controller: _passwordController,
+                        validator: _validatePassword,
+                        obscureText: true,
+                        decoration: InputDecoration(
+                          prefixIcon: Icon(Icons.lock),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10.0),
+                          ),
+                          hintText: "Password",
+                          hintStyle: TextStyle(
+                            fontWeight: FontWeight.w400,
+                            fontStyle: FontStyle.normal,
+                            fontSize: 14,
+                            color: Color(0xff000000),
+                          ),
+                          filled: true,
+                          fillColor: Color(0xffffffff),
+                          isDense: false,
+                          contentPadding: EdgeInsets.symmetric(
+                              vertical: 8, horizontal: 12),
                         ),
                       ),
                       SizedBox(height: 16.0),
@@ -327,12 +382,22 @@ class _RegistrationFormState extends State<RegistrationForm> {
                         },
                         obscureText: true,
                         decoration: InputDecoration(
-                          labelText: 'Confirm Password',
-                          filled: true,
-                          fillColor: Colors.white,
+                          prefixIcon: Icon(Icons.lock),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10.0),
                           ),
+                          hintText: "Confirm Password",
+                          hintStyle: TextStyle(
+                            fontWeight: FontWeight.w400,
+                            fontStyle: FontStyle.normal,
+                            fontSize: 14,
+                            color: Color(0xff000000),
+                          ),
+                          filled: true,
+                          fillColor: Color(0xffffffff),
+                          isDense: false,
+                          contentPadding: EdgeInsets.symmetric(
+                              vertical: 8, horizontal: 12),
                         ),
                       ),
                       SizedBox(height: 16.0),
@@ -340,12 +405,22 @@ class _RegistrationFormState extends State<RegistrationForm> {
                         controller: _addressController,
                         validator: _validateAddress,
                         decoration: InputDecoration(
-                          labelText: 'Address',
-                          filled: true,
-                          fillColor: Colors.white,
+                          prefixIcon: Icon(Icons.location_pin),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10.0),
                           ),
+                          hintText: "Address",
+                          hintStyle: TextStyle(
+                            fontWeight: FontWeight.w400,
+                            fontStyle: FontStyle.normal,
+                            fontSize: 14,
+                            color: Color(0xff000000),
+                          ),
+                          filled: true,
+                          fillColor: Color(0xffffffff),
+                          isDense: false,
+                          contentPadding: EdgeInsets.symmetric(
+                              vertical: 8, horizontal: 12),
                         ),
                       ),
                       SizedBox(height: 16.0),
@@ -367,7 +442,7 @@ class _RegistrationFormState extends State<RegistrationForm> {
                               child: Text(
                                 'Register',
                                 style: TextStyle(
-                                  fontSize: 18.0,
+                                  fontSize: 15.0,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),

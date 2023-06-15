@@ -13,7 +13,7 @@ class appointmentScreen extends StatelessWidget {
           mainAxisSize: MainAxisSize.max,
           children: [
             Container(
-              margin: EdgeInsets.fromLTRB(10, 50, 0, 0),
+              margin: EdgeInsets.fromLTRB(10, 50, 0, 10),
               padding: EdgeInsets.all(0),
               width: MediaQuery.of(context).size.width,
               height: 50,
@@ -44,7 +44,7 @@ class appointmentScreen extends StatelessWidget {
               width: MediaQuery.of(context).size.width,
               height: 350,
               decoration: BoxDecoration(
-                color: Colors.amberAccent.shade100,
+                color: Colors.grey.shade100,
                 shape: BoxShape.rectangle,
                 borderRadius: BorderRadius.zero,
                 border: Border.all(color: Color(0xff000000), width: 1),
@@ -91,7 +91,6 @@ class appointmentScreen extends StatelessWidget {
                     margin: EdgeInsets.all(0),
                     padding: EdgeInsets.all(0),
                     width: MediaQuery.of(context).size.width,
-                    height: MediaQuery.of(context).size.height,
                     decoration: BoxDecoration(
                       color: Color(0x00000000),
                       shape: BoxShape.rectangle,
@@ -119,7 +118,7 @@ class appointmentScreen extends StatelessWidget {
                             children: [
                               Text(
                                 "Jan",
-                                textAlign: TextAlign.start,
+                                textAlign: TextAlign.center,
                                 overflow: TextOverflow.clip,
                                 style: TextStyle(
                                   fontWeight: FontWeight.w400,
@@ -130,7 +129,7 @@ class appointmentScreen extends StatelessWidget {
                               ),
                               Text(
                                 "01",
-                                textAlign: TextAlign.start,
+                                textAlign: TextAlign.center,
                                 overflow: TextOverflow.clip,
                                 style: TextStyle(
                                   fontWeight: FontWeight.w400,
@@ -163,7 +162,7 @@ class appointmentScreen extends StatelessWidget {
                                 width: 250,
                                 height: 100,
                                 decoration: BoxDecoration(
-                                  color: Colors.red.shade100,
+                                  color: Colors.blue.shade100,
                                   shape: BoxShape.rectangle,
                                   borderRadius: BorderRadius.circular(10.0),
                                   border: Border.all(
@@ -174,7 +173,7 @@ class appointmentScreen extends StatelessWidget {
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     crossAxisAlignment:
-                                        CrossAxisAlignment.start,
+                                    CrossAxisAlignment.start,
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Text(
@@ -210,7 +209,7 @@ class appointmentScreen extends StatelessWidget {
                                 width: 250,
                                 height: 100,
                                 decoration: BoxDecoration(
-                                  color: Colors.teal.shade100,
+                                  color: Colors.green.shade100,
                                   shape: BoxShape.rectangle,
                                   borderRadius: BorderRadius.circular(10.0),
                                   border: Border.all(
@@ -221,7 +220,222 @@ class appointmentScreen extends StatelessWidget {
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     crossAxisAlignment:
-                                        CrossAxisAlignment.start,
+                                    CrossAxisAlignment.start,
+                                    mainAxisSize: MainAxisSize.max,
+                                    children: [
+                                      Text(
+                                        "User_name",
+                                        textAlign: TextAlign.start,
+                                        overflow: TextOverflow.clip,
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.w400,
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 20,
+                                          color: Color(0xff000000),
+                                        ),
+                                      ),
+                                      Text(
+                                        "Tittle of appointment",
+                                        textAlign: TextAlign.start,
+                                        overflow: TextOverflow.clip,
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.w400,
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 14,
+                                          color: Color(0xff000000),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              Container(
+                                margin: EdgeInsets.symmetric(
+                                    vertical: 5, horizontal: 0),
+                                padding: EdgeInsets.zero,
+                                width: 250,
+                                height: 100,
+                                decoration: BoxDecoration(
+                                  color: Colors.green.shade100,
+                                  shape: BoxShape.rectangle,
+                                  borderRadius: BorderRadius.circular(10.0),
+                                  border: Border.all(
+                                      color: Color(0xff000000), width: 1),
+                                ),
+                                child: Padding(
+                                  padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment:
+                                    CrossAxisAlignment.start,
+                                    mainAxisSize: MainAxisSize.max,
+                                    children: [
+                                      Text(
+                                        "User_name",
+                                        textAlign: TextAlign.start,
+                                        overflow: TextOverflow.clip,
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.w400,
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 20,
+                                          color: Color(0xff000000),
+                                        ),
+                                      ),
+                                      Text(
+                                        "Tittle of appointment",
+                                        textAlign: TextAlign.start,
+                                        overflow: TextOverflow.clip,
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.w400,
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 14,
+                                          color: Color(0xff000000),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(0),
+                    padding: EdgeInsets.all(0),
+                    width: MediaQuery.of(context).size.width,
+                    decoration: BoxDecoration(
+                      color: Color(0x00000000),
+                      shape: BoxShape.rectangle,
+                      borderRadius: BorderRadius.zero,
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Container(
+                          margin: EdgeInsets.fromLTRB(0, 5, 0, 0),
+                          padding: EdgeInsets.zero,
+                          width: 60,
+                          height: 60,
+                          decoration: BoxDecoration(
+                            color: Color(0x00000000),
+                            shape: BoxShape.rectangle,
+                            borderRadius: BorderRadius.zero,
+                          ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Text(
+                                "Jan",
+                                textAlign: TextAlign.center,
+                                overflow: TextOverflow.clip,
+                                style: TextStyle(
+                                  fontWeight: FontWeight.w400,
+                                  fontStyle: FontStyle.normal,
+                                  fontSize: 15,
+                                  color: Color(0xff000000),
+                                ),
+                              ),
+                              Text(
+                                "02",
+                                textAlign: TextAlign.center,
+                                overflow: TextOverflow.clip,
+                                style: TextStyle(
+                                  fontWeight: FontWeight.w400,
+                                  fontStyle: FontStyle.normal,
+                                  fontSize: 25,
+                                  color: Color(0xff000000),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          margin: EdgeInsets.zero,
+                          padding: EdgeInsets.zero,
+                          width: 250,
+                          decoration: BoxDecoration(
+                            color: Color(0x00000000),
+                            shape: BoxShape.rectangle,
+                            borderRadius: BorderRadius.zero,
+                          ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Container(
+                                margin: EdgeInsets.symmetric(
+                                    vertical: 5, horizontal: 0),
+                                padding: EdgeInsets.zero,
+                                width: 250,
+                                height: 100,
+                                decoration: BoxDecoration(
+                                  color: Colors.blue.shade100,
+                                  shape: BoxShape.rectangle,
+                                  borderRadius: BorderRadius.circular(10.0),
+                                  border: Border.all(
+                                      color: Color(0xff000000), width: 1),
+                                ),
+                                child: Padding(
+                                  padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment:
+                                    CrossAxisAlignment.start,
+                                    mainAxisSize: MainAxisSize.max,
+                                    children: [
+                                      Text(
+                                        "User_name",
+                                        textAlign: TextAlign.start,
+                                        overflow: TextOverflow.clip,
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.w400,
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 20,
+                                          color: Color(0xff000000),
+                                        ),
+                                      ),
+                                      Text(
+                                        "Title of appointment",
+                                        textAlign: TextAlign.start,
+                                        overflow: TextOverflow.clip,
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.w400,
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 14,
+                                          color: Color(0xff000000),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              Container(
+                                margin: EdgeInsets.symmetric(
+                                    vertical: 5, horizontal: 0),
+                                padding: EdgeInsets.zero,
+                                width: 250,
+                                height: 100,
+                                decoration: BoxDecoration(
+                                  color: Colors.green.shade100,
+                                  shape: BoxShape.rectangle,
+                                  borderRadius: BorderRadius.circular(10.0),
+                                  border: Border.all(
+                                      color: Color(0xff000000), width: 1),
+                                ),
+                                child: Padding(
+                                  padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment:
+                                    CrossAxisAlignment.start,
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Text(
@@ -259,26 +473,32 @@ class appointmentScreen extends StatelessWidget {
                 ],
               ),
             ),
+            SizedBox(height: 16.0),
             Padding(
               padding: EdgeInsets.fromLTRB(0, 10, 0, 30),
               child: MaterialButton(
                 onPressed: () {},
-                color: Color(0xff000000),
-                elevation: 0,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(5.0),
-                ),
-                padding: EdgeInsets.all(16),
-                child: Text(
-                  "SET APPOINTMENT",
-                  style: TextStyle(
-                    fontSize: 10,
-                    fontWeight: FontWeight.w700,
-                    fontStyle: FontStyle.normal,
+                child: Container(
+                  height: 50,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10.0),
+                    gradient: LinearGradient(
+                      colors: [Colors.red, Color(0xff800000)],
+                      begin: Alignment.centerLeft,
+                      end: Alignment.centerRight,
+                    ),
+                  ),
+                  child: Center(
+                    child: Text(
+                      'Register',
+                      style: TextStyle(
+                        fontSize: 18.0,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ),
                 ),
                 textColor: Color(0xffffffff),
-                height: 50,
                 minWidth: MediaQuery.of(context).size.width,
               ),
             ),
